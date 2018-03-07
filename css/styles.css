@@ -1,18 +1,11 @@
 /* Typography */
-
-.icons-social i {
-	font-size: 3em;
-	padding: 10px;
-}
-
-header {
-	/* text-shadow: 0 2px 0 rgba(0, 0, 0, 0.22); */
-	text-align: center;
-}
-
 html {
 	font-size: 12px;
 	font-family: 'Merriweather', serif;
+}
+
+body {
+	margin: 0;
 }
 
 h1 {
@@ -63,12 +56,6 @@ h3, html {
 	font-weight: 300;
 }
 
-/* Layout */
-
-body {
-	margin: 0;
-}
-
 header {
 	display: flex;
 	flex-direction: column;
@@ -76,6 +63,7 @@ header {
 	align-items: center;
 	justify-content: center;
 	padding: 0 30px;
+	text-align: center;
 }
 
 header > h1 {
@@ -85,7 +73,7 @@ header > h1 {
 /* Color */
 
 header {
-  background: #FEDC32;  /* fallback for old browsers */
+  background: #FEDC32;
 	color: #1E1E1E;
 }
 
@@ -93,9 +81,14 @@ header {
 	color: #1E1E1E;
 }
 
+.icons-social i {
+	font-size: 3em;
+	padding: 10px;
+}
+
 .devto {
 	margin-bottom: -0.20rem;
-	margin-left: 1.15rem;
-	width: 2.625rem;
-	height: 2.625rem;
+	margin-left: 0.675rem;;
+	width: 2.65rem;
+	height: 2.65rem;
 }
