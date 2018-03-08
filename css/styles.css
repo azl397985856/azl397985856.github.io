@@ -50,8 +50,8 @@ main > .intro {
 }
 
 main > .tagline {
-	font-size: 1.5em;
-	margin: 1em 0;
+	font-size: 1.5rem;
+	margin: 1.5rem 0;
 	font-weight: 100;
 }
 
