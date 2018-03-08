@@ -1,23 +1,7 @@
 /* Typography */
+
 html {
-	font-size: 12px;
 	font-family: 'Roboto', sans-serif;
-}
-
-body {
-	margin: 0;
-}
-
-h1 {
-	font-size: 3.75em;
-}
-
-h2 {
-	font-size: 2em;
-}
-
-h3 {
-	font-size: 1.5em;
 }
 
 @media (min-width: 576px) {
@@ -44,19 +28,13 @@ h3 {
 	}
 }
 
-h1, h2 {
-	font-weight: 600;
+.icons-social i {
+	font-size: 3em;
 }
 
-h1 .heavier {
-	font-weight: 700;
-}
+/* Custom Styles */
 
-h3, html {
-	font-weight: 300;
-}
-
-header {
+main {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
@@ -65,28 +43,23 @@ header {
 	text-align: center;
 }
 
-header > h1 {
+main > .intro {
 	font-family: 'Reem Kufi', sans-serif;
-	margin: 0;
+	font-size: 3.75em;
+	font-weight: 600;
 }
 
-/* Color */
-
-header {
-  background: #FEDC32;
-	color: #1E1E1E;
-}
-
-.icons-social a {
-	color: #1E1E1E;
+main > .tagline {
+	font-size: 1.5em;
+	margin: 1em 0;
+	font-weight: 100;
 }
 
 .icons-social i {
-	font-size: 3em;
 	padding: 10px;
 }
 
-.devto {
+.devto img {
 	margin-bottom: -0.20rem;
 	margin-left: 0.675rem;;
 	width: 2.65rem;
