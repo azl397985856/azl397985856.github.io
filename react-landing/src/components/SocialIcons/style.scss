@@ -1,0 +1,21 @@
+@import '../../styles/theme';
+
+.social-icons {
+	font-size: 3rem;
+	padding: 0.25rem 0;
+	
+	a {
+		padding: 0 0.625rem;
+		color: $color-primary;
+
+		svg path{
+			fill: $color-primary;
+		}
+
+		&.devto svg {
+			margin-bottom: -0.25rem;
+			width: 2.70rem;
+			height: 2.70rem;
+		}
+	}
+}
