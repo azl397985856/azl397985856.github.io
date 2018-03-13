@@ -1,24 +1,32 @@
 @import '../../styles/theme';
 
-main {
+.page-wrapper {
+	min-height: 100vh;
+	background: $color-bg;
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
 	justify-content: center;
-	padding: 0 30px;
-	text-align: center;
-	background: $color-bg;
-	color: $color-primary;
-
-	> .intro {
-		font-family: 'Reem Kufi', sans-serif;
-		font-size: 3.75em;
-		font-weight: 600;
-	}
-
-	> .tagline {
-		font-size: 1.5rem;
-		margin: 1.5rem 0;
-		font-weight: 100;
+	
+	main {
+		flex: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 0 30px;
+		text-align: center;
+		color: $color-primary;
+	
+		> .intro {
+			font-family: 'Reem Kufi', sans-serif;
+			font-size: 3.75em;
+			font-weight: 600;
+		}
+	
+		> .tagline {
+			font-size: 1.5rem;
+			margin: 1.5rem 0;
+			font-weight: 100;
+		}
 	}
 }
+
