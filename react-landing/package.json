@@ -2,7 +2,7 @@
   "name": "react-landing",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://flexdinesh.github.io/react-landing",
+  "homepage" : "http://flexdinesh.github.io",
   "dependencies": {
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
