@@ -5,9 +5,11 @@
   "homepage" : "http://flexdinesh.github.io/react-landing/dist/",
   "scripts": {
     "start": "node scripts/start.js",
+    "prebuild": "npm run clean",
     "build": "node scripts/build.js",
+    "postbuild": "cp dist/index.html ./index.html",
     "test": "node scripts/test.js --env=jsdom",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist index.html"
   },
   "dependencies": {
     "react": "^16.2.0",
