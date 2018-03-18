@@ -14,7 +14,7 @@ class ScrollToNext extends Component {
 
   render() {
     return (
-      <div className="scroll-next" onClick={ e => this.scrollToNext()}>
+      <div className="scroll-to-next" onClick={ e => this.scrollToNext()}>
         <div className="arrow bounce">
           <div className="scroll-text">Click Me</div>
           <button className="fas fa-chevron-down fa-2x" href="#"></button>

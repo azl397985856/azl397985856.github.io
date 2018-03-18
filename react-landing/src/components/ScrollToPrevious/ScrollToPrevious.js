@@ -17,6 +17,7 @@ class ScrollToPrevious extends Component {
       <div className="scroll-to-previous" onClick={ e => this.scrollToPrevious()}>
         <div className="arrow bounce">
           <button className="fas fa-chevron-up fa-2x" href="#"></button>
+          <div className="scroll-text">Click Me</div>
         </div>
       </div>
     );

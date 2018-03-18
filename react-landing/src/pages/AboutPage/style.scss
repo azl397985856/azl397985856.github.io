@@ -27,11 +27,12 @@
 
     .about-pic {
       align-self: center;
-      padding: 1rem;
-      width: 60rem;
+      padding-right: 2rem;
       
-      @media (max-width: 768px) {
-        width: initial;
+      img {
+        max-width: 10rem;
+        border-radius: 50%;
+        border: 2px solid $color-primary;
       }
     }
     
