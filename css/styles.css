@@ -33,9 +33,17 @@ html {
 }
 
 /* Custom Styles */
+.under-construction {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding: 1rem;
+	font-size: 0.75em;
+}
 
 main {
 	display: flex;
+	flex: 1 1 auto;
 	flex-direction: column;
 	min-height: 100vh;
 	justify-content: center;
