@@ -1,3 +1,5 @@
+@import '../../styles/theme';
+
 .about-page {
   min-height: 100vh;
   display: flex;
@@ -5,13 +7,41 @@
 	flex-direction: column;
   justify-content: center;
   
+  h1 {
+    padding: 1rem 0;
+    font-size: 3rem;
+  }
+
   .content-grid {
-		flex: auto;
+    flex: auto;
+  }
+
+  .about-wrapper {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    .about-pic {
+      align-self: center;
+      padding: 1rem;
+      width: 60rem;
+      
+      @media (max-width: 768px) {
+        width: initial;
+      }
+    }
     
-    p {
-      margin: 1rem;
+    .about-content {
       padding: 1rem 0;
+      font-size: 0.75rem;
+      line-height: 1.5rem;
     }
   }
+
   
+
 }
