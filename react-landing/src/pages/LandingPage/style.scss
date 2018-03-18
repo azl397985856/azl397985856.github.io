@@ -1,9 +1,10 @@
 @import '../../styles/theme';
 
-.page-wrapper {
+.landing-page {
 	min-height: 100vh;
 	background: $color-bg;
 	display: flex;
+	flex: 1 1 auto;
 	flex-direction: column;
 	justify-content: center;
 	
@@ -18,8 +19,11 @@
 	
 		> .intro {
 			font-family: 'Reem Kufi', sans-serif;
-			font-size: 3.75em;
+			font-size: 4rem;
 			font-weight: 600;
+			@media (max-width: 414px) {
+				font-size: 3rem;
+			}
 		}
 	
 		> .tagline {

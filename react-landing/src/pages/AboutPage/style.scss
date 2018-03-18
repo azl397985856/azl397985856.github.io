@@ -1,0 +1,17 @@
+.about-page {
+  min-height: 100vh;
+  display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+  justify-content: center;
+  
+  .content-grid {
+		flex: auto;
+    
+    p {
+      margin: 1rem;
+      padding: 1rem 0;
+    }
+  }
+  
+}
