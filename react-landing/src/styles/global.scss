@@ -48,10 +48,15 @@ body {
 		width: calc(100% - 5rem);
 	}
 
-	@media (min-width: 769px) {
+	@media (min-width: 769px) { // ipad pro
+		width: calc(100% - 10rem);
+	}
+
+	@media (min-width: 1025px) { // desktop/laptop
 		width: calc(100% - 20rem);
 	}
 }
+
 
 ::-webkit-scrollbar { 
 	display: none; 
