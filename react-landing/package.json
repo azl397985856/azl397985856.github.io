@@ -5,6 +5,7 @@
   "homepage" : "http://flexdinesh.github.io/react-landing/dist/",
   "scripts": {
     "start": "node scripts/start.js",
+    "start:prod": "ENV=prod node scripts/start.js",
     "prebuild": "npm run clean",
     "build": "node scripts/build.js",
     "postbuild": "cp dist/index.html ./index.html",
