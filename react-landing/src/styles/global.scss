@@ -1,3 +1,5 @@
+@import './theme';
+// @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
 /* Typography */
 
 /* roboto-300 - latin */
@@ -5,9 +7,7 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
-  src: local('Roboto Light'), local('Roboto-Light'),
-       url('../libs/fonts/roboto-v18-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../libs/fonts/roboto-v18-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
 }
 
 /* reem-kufi-regular - latin */
@@ -36,8 +36,22 @@ html {
 }
 
 body {
+	background-color: $bg-primary;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 	font-family: 'Roboto', sans-serif;
-	background-color: #FAFAFA;
+	font-weight: 300;
+	color: $text-primary;
+}
+
+::selection {
+  background: $color-highlight;
+}
+
+h1 {
+	color: $color-primary;
+	font-weight: 900;
 }
 
 .content-grid {

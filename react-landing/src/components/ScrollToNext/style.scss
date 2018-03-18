@@ -1,7 +1,10 @@
+@import '../../styles/theme';
+
 .scroll-next {
   cursor: pointer;
 
   .arrow {
+    color: $color-primary;
     text-align: center;
     margin: 0 auto;
 

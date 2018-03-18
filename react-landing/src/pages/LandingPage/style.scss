@@ -2,7 +2,7 @@
 
 .landing-page {
 	min-height: 100vh;
-	background: $color-bg;
+	background: $bg-landing;
 	display: flex;
 	flex: 1 1 auto;
 	flex-direction: column;
@@ -21,8 +21,12 @@
 			font-family: 'Reem Kufi', sans-serif;
 			font-size: 4rem;
 			font-weight: 600;
+			line-height: 4.5rem;
+			padding-bottom: 1rem;
+			
 			@media (max-width: 414px) {
 				font-size: 3rem;
+				line-height: 3.5rem;
 			}
 		}
 	

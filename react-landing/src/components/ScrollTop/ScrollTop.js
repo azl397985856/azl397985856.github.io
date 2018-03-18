@@ -15,7 +15,7 @@ class ScrollTop extends Component {
     return (
       <div className="scroll-top" onClick={ e => this.scrollToTop()}>
         <div className={`arrow ${shouldHide ? 'hide' : ''}`}>
-          <button className="fas fa-arrow-up fa-2x" href="#"></button>
+          <button className="fas fa-angle-double-up fa-2x" href="#"></button>
           <div className="to-top">To Top</div>
         </div>
       </div>

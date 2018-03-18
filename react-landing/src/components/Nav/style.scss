@@ -1,13 +1,12 @@
 @import '../../styles/theme';
 
 nav {
-  // font-family: 'Reem Kufi', sans-serif;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  height: 3rem;
-  background-color: $color-primary;
-  color: #FAFAFA;
+  height: 4rem;
+  background-color: $bg-primary;
+  color: $color-primary;
 
   .menu {
     margin-right: 1rem;
@@ -15,17 +14,15 @@ nav {
     justify-content: flex-end;
 
     &__item {
-      // border-bottom: 2px solid $text-secondary;
-      // text-transform: uppercase;
-      // font-weight: bold;
       padding: 0.25rem 0;
       margin: 0 1rem;
-      font-size: 0.875rem;
+      font-size: 1.25rem;
+      font-weight: 400;
+      border-bottom: 2px solid transparent;
 
       &:hover {
         cursor: pointer;
-        border-color: $color-bg;
-        color: $color-bg;
+        border-bottom: 2px solid $color-primary;
       }
     }
   }
