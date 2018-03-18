@@ -2,12 +2,37 @@
 // @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
 /* Typography */
 
-/* roboto-300 - latin */
+/* roboto - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+	src: local('Roboto Thin'), local('Roboto-Thin'),
+	url(https://fonts.gstatic.com/s/roboto/v18/KFOkCnqEu92Fr1MmgVxIIzIXKMny.woff2) format('woff2');
+}
+
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
-  src: url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+	src: local('Roboto Light'), local('Roboto-Light'),
+	url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+	src: local('Roboto'), local('Roboto-Regular'),
+	url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+	src: local('Roboto Black'), local('Roboto-Black'),
+	url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmYUtfBBc4AMP6lQ.woff2) format('woff2');
 }
 
 /* reem-kufi-regular - latin */
