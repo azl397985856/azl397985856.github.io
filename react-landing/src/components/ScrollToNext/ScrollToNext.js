@@ -16,6 +16,7 @@ class ScrollToNext extends Component {
     return (
       <div className="scroll-next" onClick={ e => this.scrollToNext()}>
         <div className="arrow bounce">
+          <div className="scroll-text">Click Me</div>
           <button className="fas fa-chevron-down fa-2x" href="#"></button>
         </div>
       </div>
