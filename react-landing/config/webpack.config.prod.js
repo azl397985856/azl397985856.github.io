@@ -210,7 +210,10 @@ module.exports = {
                       },
                     },
                     {
-                      loader: require.resolve('sass-loader')
+                      loader: require.resolve('sass-loader'),
+                      options: {
+                        includePaths: [path.resolve(paths.appSrc, 'styles')]
+                      },
                     },
                   ],
                 },

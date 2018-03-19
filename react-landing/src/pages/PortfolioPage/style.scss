@@ -1,4 +1,4 @@
-@import '../../styles/theme';
+@import 'theme';
 
 .portfolio-page {
   padding-top: 3rem;
@@ -26,11 +26,11 @@
       flex-direction: column;
     }
 
-    .portfolio-content {
-      padding: 1rem 0;
-      font-size: 0.75rem;
-      line-height: 1.5rem;
-    }
+    // .portfolio-content {
+    //   padding: 1rem 0;
+    //   font-size: 0.75rem;
+    //   line-height: 1.5rem;
+    // }
   }
 
   
