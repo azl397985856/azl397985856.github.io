@@ -1,13 +1,17 @@
 @import '../../styles/theme';
 
 .about-page {
-  padding-top: 3rem;
+  padding-top: 2rem;
   min-height: 100vh;
   display: flex;
 	flex: 1 1 auto;
 	flex-direction: column;
   justify-content: center;
   
+  @media (max-width: 414px) {
+  padding-top: 3rem;
+  }
+
   h1 {
     padding: 1rem 0;
     font-size: 3rem;
