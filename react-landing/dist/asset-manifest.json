@@ -1,9 +1,13 @@
 {
-  "main.css": "static/css/main.faf5d512.css",
-  "main.css.map": "static/css/main.faf5d512.css.map",
-  "main.js": "static/js/main.a186f86a.js",
-  "main.js.map": "static/js/main.a186f86a.js.map",
+  "main.css": "static/css/main.4ef0cc93.css",
+  "main.css.map": "static/css/main.4ef0cc93.css.map",
+  "main.js": "static/js/main.0738a68e.js",
+  "main.js.map": "static/js/main.0738a68e.js.map",
   "static/media/pic.jpeg": "static/media/pic.0fa4ae75.jpeg",
   "static/media/reem-kufi-v4-latin-regular.woff": "static/media/reem-kufi-v4-latin-regular.20e4fd7e.woff",
-  "static/media/reem-kufi-v4-latin-regular.woff2": "static/media/reem-kufi-v4-latin-regular.d8f8811d.woff2"
+  "static/media/reem-kufi-v4-latin-regular.woff2": "static/media/reem-kufi-v4-latin-regular.d8f8811d.woff2",
+  "static/media/roboto-100.woff2": "static/media/roboto-100.9a8a1f8c.woff2",
+  "static/media/roboto-300.woff2": "static/media/roboto-300.c0cc9c92.woff2",
+  "static/media/roboto-400.woff2": "static/media/roboto-400.ece6673e.woff2",
+  "static/media/roboto-900.woff2": "static/media/roboto-900.2e17a648.woff2"
 }
