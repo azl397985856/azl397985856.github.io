@@ -1,13 +1,17 @@
 @import 'theme';
 
 .portfolio-page {
-  padding-top: 3rem;
+  padding-top: 2rem;
   min-height: 100vh;
   display: flex;
-	flex: 1 1 auto;
+	flex: 0 1 auto;
 	flex-direction: column;
   justify-content: center;
   
+  @media (max-width: 414px) {
+    padding-top: 3rem;
+  }
+
   h1 {
     padding: 1rem 0;
     font-size: 3rem;
@@ -19,20 +23,11 @@
 
   .portfolio-wrapper {
     display: flex;
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     justify-content: center;
 
     @media (max-width: 768px) {
       flex-direction: column;
     }
-
-    // .portfolio-content {
-    //   padding: 1rem 0;
-    //   font-size: 0.75rem;
-    //   line-height: 1.5rem;
-    // }
   }
-
-  
-
 }
