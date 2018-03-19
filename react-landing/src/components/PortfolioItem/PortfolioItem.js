@@ -17,8 +17,8 @@ const PortfolioItem = props => {
         I do badass things and kickass everyday!
       </div>
       <div className='portfolio-item__links'>
-        <a href="#" title="View on GitHub"><i class="fab fa-github"></i></a>
-        <a href="#" title="Link to Page"><i class="fas fa-external-link-alt"></i></a>
+        <a href="#" title="View on GitHub"><i className="fab fa-github"></i></a>
+        <a href="#" title="Link to Page"><i className="fas fa-external-link-alt"></i></a>
       </div>
       <div className='portfolio-item__hash-tags'>
         #javascript #react #ES6
