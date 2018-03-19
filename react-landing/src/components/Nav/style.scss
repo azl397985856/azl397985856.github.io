@@ -12,7 +12,7 @@ nav {
   color: $color-primary;
 
   &.sticky {
-    background-color: rgba(244, 247, 246, 0.75);
+    background-color: $nav-alpha;
   }
 
   .menu {
