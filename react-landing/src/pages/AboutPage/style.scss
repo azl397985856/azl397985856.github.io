@@ -4,7 +4,7 @@
   padding-top: 2rem;
   min-height: 100vh;
   display: flex;
-	flex: 1 1 auto;
+	flex: 0 1 auto;
 	flex-direction: column;
   justify-content: center;
   
@@ -23,7 +23,7 @@
 
   .about-wrapper {
     display: flex;
-    flex: 1 1 auto;
+    flex: 0 1 auto;
     justify-content: center;
 
     @media (max-width: 768px) {
@@ -43,11 +43,17 @@
     
     .about-content {
       padding: 1rem 0;
-      font-size: 0.75rem;
+      font-size: 0.875rem;
       line-height: 1.5rem;
+
+      .text-emoji {
+        // color: $color-primary;
+        padding: 1rem 0;
+        font-size: 1.5rem;
+        font-weight: 100;
+        text-align: center;
+      }
     }
   }
-
-  
 
 }
