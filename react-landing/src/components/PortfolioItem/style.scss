@@ -29,12 +29,6 @@ $border-radius: 2px;
     }
   }
 
-  &__hash-tags {
-    padding: 0.5rem;
-    font-size: 0.75rem;
-    text-align: center;
-  }
-
   &__desc {
     padding: 1rem 0.5rem;
     font-size: 0.75rem;
@@ -42,9 +36,13 @@ $border-radius: 2px;
   }
 
   &__links {
-    padding: 0.5rem;
-    text-align: center;
-    
+    // padding: 0.5rem;
+    font-size: 1.25rem;
+    display: flex;
+    flex: 0 1 auto;
+    align-items: center;
+    justify-content: center;
+
     a {
       text-decoration: none;
       color: inherit;
@@ -53,5 +51,11 @@ $border-radius: 2px;
     svg {
       margin: 0 0.25rem;
     }
+  }
+
+  &__hash-tags {
+    padding: 1rem 0;
+    font-size: 0.75rem;
+    text-align: center;
   }
 }
