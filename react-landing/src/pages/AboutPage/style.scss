@@ -9,7 +9,7 @@
   justify-content: center;
   
   @media (max-width: 414px) {
-  padding-top: 3rem;
+    padding-top: 3rem;
   }
 
   h1 {
@@ -32,8 +32,12 @@
 
     .about-pic {
       align-self: center;
-      padding-right: 2rem;
+      padding: 0 2rem 0 0;
       
+      @media (max-width: 768px) {
+        padding: 1rem 0 1rem;
+      }
+
       img {
         max-width: 10rem;
         border-radius: 50%;
@@ -47,7 +51,6 @@
       line-height: 1.5rem;
 
       .text-emoji {
-        // color: $color-primary;
         padding: 1rem 0;
         font-size: 1.5rem;
         font-weight: 100;
