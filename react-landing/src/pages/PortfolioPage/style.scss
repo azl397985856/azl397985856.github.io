@@ -23,10 +23,10 @@
 
   .portfolio-wrapper {
     display: flex;
-    flex: 0 1 auto;
+    // flex: 0 1 auto;
     justify-content: center;
 
-    @media (max-width: 768px) {
+    @media (max-width: 415px) {
       flex-direction: column;
     }
   }

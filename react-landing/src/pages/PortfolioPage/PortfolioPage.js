@@ -1,6 +1,7 @@
 import React from 'react';
 import PortfolioItem from '@components/PortfolioItem';
 import ScrollToPrevious from '@components/ScrollToPrevious';
+import portfolioItems from './portfolio-items';
 
 import './style.scss';
 
@@ -10,9 +11,11 @@ const PortfolioPage = () => {
         <div className="content-grid">
         <h1>Portfolio</h1>
           <div className="portfolio-wrapper">
-            <PortfolioItem />
-            <PortfolioItem />
-            <PortfolioItem />
+            {
+              portfolioItems.map( (item, i) =>
+                <PortfolioItem render={item.render} key={ i } />
+              )
+            }
           </div>        
           
         </div>
