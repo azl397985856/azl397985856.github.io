@@ -10,12 +10,9 @@ class AboutPage extends Component {
         <div className="content-grid">
         <h1>About</h1>
           <div className="about-wrapper">
-            <div className="about-pic">
-              <img src={PicSource} alt="pic" />
-            </div>
             <div className="about-content">
-              <p>I am a popular bla bla blaaaaah. I go blah and do blah blah blah. I bla bla bla of all the awesomatic blahs.</p>
-              <p>The biggess of all the jajajas are my hats in my bin.</p>
+              <p>I like <span className="highlight">JavaScript</span> and everything web.</p>
+              <p>I build <span className="highlight">awesome</span> stuff, fork interesting repos, <span className="highlight">blog</span> what I learn and solve mythical problems.</p>
               <p className='text-emoji'>\ (•◡•) /</p>
             </div>
           </div>        

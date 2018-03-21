@@ -22,39 +22,27 @@
   }
 
   .about-wrapper {
-    display: flex;
-    flex: 0 1 auto;
-    justify-content: center;
-
-    @media (max-width: 768px) {
-      flex-direction: column;
-    }
-
-    .about-pic {
-      align-self: center;
-      padding: 0 2rem 0 0;
-      
-      @media (max-width: 768px) {
-        padding: 1rem 0 1rem;
-      }
-
-      img {
-        max-width: 10rem;
-        border-radius: 50%;
-        border: 2px solid $color-primary;
-      }
-    }
     
     .about-content {
-      padding: 1rem 0;
-      font-size: 0.875rem;
+      font-size: 1rem;
       line-height: 1.5rem;
+      text-align: center;
+      
+      p {
+        padding: 0.5rem 0;
+        // font-weight: 400;
+      }
+
+      .highlight {
+        background-color: $color-highlight;
+      }
 
       .text-emoji {
-        padding: 1rem 0;
+        padding: 2rem 0;
         font-size: 1.5rem;
-        font-weight: 100;
+        font-weight: 300;
         text-align: center;
+        color: $color-primary;
       }
     }
   }
