@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ScrollToNext from '@components/ScrollToNext';
-import PicSource from '@images/pic.jpeg';
 import './style.scss';
 
 class AboutPage extends Component {
