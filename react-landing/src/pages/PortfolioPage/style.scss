@@ -23,7 +23,7 @@
 
   .portfolio-wrapper {
     display: flex;
-    // flex: 0 1 auto;
+    flex-wrap: wrap;
     justify-content: center;
 
     @media (max-width: 415px) {

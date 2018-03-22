@@ -11,6 +11,7 @@ const PortfolioPage = () => {
         <div className="content-grid">
         <h1>Portfolio</h1>
           <div className="portfolio-wrapper">
+          <PortfolioItem />
             {
               portfolioItems.map( (item, i) =>
                 <PortfolioItem render={item.render} key={ i } />
