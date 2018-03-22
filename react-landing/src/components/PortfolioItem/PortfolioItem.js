@@ -22,6 +22,8 @@ const PortfolioItem = props => {
           <i className="fab fa-html5"></i>
         </div>
         <div className='portfolio-item__links'>
+          <a src="#">Code</a>
+          <a src="#">Blog</a>
         </div>
       </div>
     );
