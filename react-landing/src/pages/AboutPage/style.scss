@@ -24,11 +24,12 @@
   .about-wrapper {
     
     .about-content {
-      font-size: 1rem;
+      font-size: 0.875rem;
       line-height: 1.5rem;
-      text-align: center;
+      // text-align: center;
       
       p {
+        font-weight: 300;
         padding: 0.5rem 0;
       }
 
