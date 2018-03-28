@@ -13,9 +13,11 @@ class ScrollToPrevious extends Component {
   }
 
   render() {
+    const { theme: { colorPrimary } } = this.context;
+    
     return (
       <div className="scroll-to-previous" onClick={ e => this.scrollToPrevious()}>
-        <div className="arrow bounce">
+        <div className="arrow bounce" style={ { color: colorPrimary } }>
           <button className="fas fa-chevron-up fa-2x" href="#"></button>
           <div className="scroll-text">Click Me</div>
         </div>
@@ -27,5 +29,9 @@ class ScrollToPrevious extends Component {
 ScrollToPrevious.propTypes = {
   pageSelector: PropTypes.string
 }
+
+ScrollToPrevious.contextTypes = {
+  theme: PropTypes.any
+};
 
 export default ScrollToPrevious;

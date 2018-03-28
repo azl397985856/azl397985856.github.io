@@ -1,16 +1,29 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import PortfolioItem from '@components/PortfolioItem';
 import ScrollToPrevious from '@components/ScrollToPrevious';
 import portfolioItems from './portfolio-items';
 
 import './style.scss';
 
-const PortfolioPage = () => {
+const PortfolioPage = (props, context) => {
+  const { theme: { colorPrimary, colorAlternate, textAlternate, bgPrimary } } = context;
+  
   return (
-    <div className="portfolio-page">
+    <div className="portfolio-page" style={{ backgroundColor: bgPrimary }}>
         <div className="content-grid">
         <h1>Portfolio</h1>
           <div className="portfolio-wrapper">
+          <style jsx>{`
+            .portfolio-item {
+              background-color: ${colorPrimary};
+              color: ${textAlternate};
+            }
+            .portfolio-item__links:hover {
+              border-bottom: 2px solid ${colorAlternate};
+            }
+          `}
+          </style>
           {/* <PortfolioItem /> */}
             {
               portfolioItems.map( (item, i) =>
@@ -23,6 +36,10 @@ const PortfolioPage = () => {
         <ScrollToPrevious pageSelector='.about-page' />
       </div>
   );
+};
+
+PortfolioPage.contextTypes = {
+  theme: PropTypes.any
 };
 
 export default PortfolioPage;

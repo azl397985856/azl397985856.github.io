@@ -1,4 +1,4 @@
-@import 'theme';
+// @import 'theme';
 
 .social-icons {
 	padding: 0.25rem 0;
@@ -10,10 +10,10 @@
 	
 	a {
 		padding: 0 0.625rem;
-		color: $color-primary;
+		// color: $color-primary;
 
 		svg path{
-			fill: $color-primary;
+			// fill: $color-primary;
 		}
 
 		&.devto svg {
