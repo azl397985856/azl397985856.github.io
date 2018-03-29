@@ -59,22 +59,12 @@ html {
 	}
 }
 
-body {
-	background-color: $bg-primary;
-}
-
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
-	color: $text-primary;
-}
-
-::selection {
-  background: $color-highlight;
 }
 
 h1 {
-	color: $color-primary;
 	font-weight: 900;
 }
 

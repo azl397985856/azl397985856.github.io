@@ -1,5 +1,3 @@
-// @import 'theme';
-
 .social-icons {
 	padding: 0.25rem 0;
 	font-size: 3rem;
@@ -10,11 +8,6 @@
 	
 	a {
 		padding: 0 0.625rem;
-		// color: $color-primary;
-
-		svg path{
-			// fill: $color-primary;
-		}
 
 		&.devto svg {
 			margin-bottom: -0.25rem;
