@@ -24,7 +24,7 @@
   .portfolio-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 
     @media (max-width: 415px) {
       flex-direction: column;
