@@ -1,5 +1,6 @@
 const themes = [
   {
+    name: 'blue',
     colorPrimary: '#5CB0DD',
     colorAlternate: '#F4F4F6',
     colorHighlight: '#D6EBF6',
@@ -7,6 +8,7 @@ const themes = [
     navAlpha: 'rgba(244, 244, 246, 0.75)'
   },
   {
+    name: 'cyan',
     colorPrimary: '#49c5b6',
     colorAlternate: '#F4F7F6',
     colorHighlight: '#DBEBD9',
