@@ -39,12 +39,16 @@ class Nav extends Component {
   }
 
   render() {
-    const { theme: { colorPrimary, bgPrimary, navAlpha } } = this.context;
+    const { theme: { colorPrimary, bgPrimary, navAlpha }, switchTheme } = this.context;
     
     const stickyClass = this.state.isSticky ? 'sticky' : '';
     const stickyStyles = this.state.isSticky ? { backgroundColor: navAlpha, color: colorPrimary } : { backgroundColor: bgPrimary, color: colorPrimary };
     return (
       <nav className={ stickyClass } ref={elem => {this.nav = elem}} style={ stickyStyles }>
+      <div className="magic-wand bounce-xy" onClick={ e => switchTheme()}>
+        <button className="fas fa-magic fa-lg" href="#"></button>
+        <div className="magic-text">Color Me</div>
+      </div>
       <style jsx>{`
           .menu__item:hover {
             border-bottom: 2px solid ${colorPrimary};
@@ -61,7 +65,8 @@ class Nav extends Component {
 }
 
 Nav.contextTypes = {
-  theme: PropTypes.any
+  theme: PropTypes.any,
+  switchTheme: PropTypes.func
 };
 
 export default Nav;
