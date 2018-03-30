@@ -49,7 +49,7 @@ class Nav extends Component {
         <button className="fas fa-magic fa-lg" href="#"></button>
         <div className="magic-text">Color Me</div>
       </div>
-      <style jsx>{`
+      <style jsx="true">{`
           .menu__item:hover {
             border-bottom: 2px solid ${colorPrimary};
           }

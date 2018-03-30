@@ -44,14 +44,16 @@ class ThemeSwitcher extends Component {
 
     return (
       <div className="theme-switcher">
-        <style jsx>{`
+        <style jsx="true">
+        {`
           body {
             background-color: ${theme.bgPrimary};
             body, h1, h2, h3, h4, h5, h6, p, ol, ul {
               color: ${theme.textPrimary}
             }
           }
-        `}</style>
+        `}
+        </style>
         { children }
       </div>
     );

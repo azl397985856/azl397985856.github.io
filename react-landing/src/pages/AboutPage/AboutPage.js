@@ -9,7 +9,7 @@ class AboutPage extends Component {
     
     return (
       <div className="about-page" style={{ backgroundColor: bgPrimary }}>
-        <style jsx>{`
+        <style jsx="true">{`
           .highlight {
             background-color: ${colorHighlight};
           }
