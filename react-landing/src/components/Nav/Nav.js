@@ -10,19 +10,19 @@ class Nav extends Component {
     this.handleScroll = this.handleScroll.bind(this);
     this.state = {
       isSticky: false
-    }
+    };
   }
 
   componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll);
   }
 
   componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
   handleScroll() {
-    if(window.pageYOffset > this.nav.offsetTop) {
+    if (window.pageYOffset > this.nav.offsetTop) {
       this.setState({
         isSticky: true
       });
@@ -39,25 +39,47 @@ class Nav extends Component {
   }
 
   render() {
-    const { theme: { colorPrimary, bgPrimary, navAlpha }, switchTheme } = this.context;
-    
+    const {
+      theme: { colorPrimary, bgPrimary, navAlpha },
+      switchTheme
+    } = this.context;
+
     const stickyClass = this.state.isSticky ? 'sticky' : '';
-    const stickyStyles = this.state.isSticky ? { backgroundColor: navAlpha, color: colorPrimary } : { backgroundColor: bgPrimary, color: colorPrimary };
+    const stickyStyles = this.state.isSticky
+      ? { backgroundColor: navAlpha, color: colorPrimary }
+      : { backgroundColor: bgPrimary, color: colorPrimary };
     return (
-      <nav className={ stickyClass } ref={elem => {this.nav = elem}} style={ stickyStyles }>
-      <div className="magic-wand bounce-xy" onClick={ e => switchTheme()}>
-        <button className="fas fa-magic fa-lg" href="#"></button>
-        <div className="magic-text">Color Me</div>
-      </div>
-      <style jsx="true">{`
-          .menu__item:hover {
-            border-bottom: 2px solid ${colorPrimary};
-          }
-        `}
+      <nav
+        className={stickyClass}
+        ref={(elem) => {
+          this.nav = elem;
+        }}
+        style={stickyStyles}
+      >
+        <div className="magic-wand bounce-xy" onClick={(e) => switchTheme()}>
+          <button className="fas fa-magic fa-lg" href="#" />
+          <div className="magic-text">Color Me</div>
+        </div>
+        <style jsx="true">
+          {`
+            .menu__item:hover {
+              border-bottom: 2px solid ${colorPrimary};
+            }
+          `}
         </style>
         <div className="menu">
-          <div className="menu__item active" onClick={ e => this.scrollToPage('.about-page')}>About</div>
-          <div className="menu__item" onClick={ e => this.scrollToPage('.portfolio-page')}>Portfolio</div>
+          <div
+            className="menu__item active"
+            onClick={(e) => this.scrollToPage('.about-page')}
+          >
+            About
+          </div>
+          <div
+            className="menu__item"
+            onClick={(e) => this.scrollToPage('.portfolio-page')}
+          >
+            Portfolio
+          </div>
         </div>
       </nav>
     );

@@ -4,11 +4,14 @@ import './style';
 
 const PortfolioItem = (props, context) => {
   const { theme: { colorPrimary, textAlternate } } = context;
-  
+
   if (props.render) return props.render;
   else
     return (
-      <div className="portfolio-item" style={ { backgroundColor: colorPrimary, color: textAlternate } }>
+      <div
+        className="portfolio-item"
+        style={{ backgroundColor: colorPrimary, color: textAlternate }}
+      >
         <div className="portfolio-item__title">Badass</div>
 
         <div className="portfolio-item__desc">

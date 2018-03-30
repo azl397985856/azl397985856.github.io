@@ -5,7 +5,6 @@ import { toElement as scrollToElement } from '@utils/scroll';
 import './style.scss';
 
 class ScrollToNext extends Component {
-
   scrollToNext() {
     const { pageSelector } = this.props;
     const nextPage = document.querySelector(pageSelector);
@@ -15,10 +14,10 @@ class ScrollToNext extends Component {
   render() {
     const { theme: { colorPrimary } } = this.context;
     return (
-      <div className="scroll-to-next" onClick={ e => this.scrollToNext()}>
-        <div className="arrow bounce" style={ { color: colorPrimary } }>
+      <div className="scroll-to-next" onClick={(e) => this.scrollToNext()}>
+        <div className="arrow bounce" style={{ color: colorPrimary }}>
           <div className="scroll-text">Click Me</div>
-          <button className="fas fa-chevron-down fa-2x" href="#"></button>
+          <button className="fas fa-chevron-down fa-2x" href="#" />
         </div>
       </div>
     );
@@ -27,7 +26,7 @@ class ScrollToNext extends Component {
 
 ScrollToNext.propTypes = {
   pageSelector: PropTypes.string
-}
+};
 
 ScrollToNext.contextTypes = {
   theme: PropTypes.any
