@@ -22,6 +22,9 @@ const PortfolioPage = (props, context) => {
                 background-color: ${colorPrimary};
                 color: ${textAlternate};
               }
+              .portfolio-item a {
+                color: ${textAlternate};
+              }
               .portfolio-item__links a:hover {
                 border-bottom: 2px solid ${colorAlternate};
               }
