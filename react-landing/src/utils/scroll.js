@@ -30,7 +30,8 @@ export const toElement = (element) => {
   if (element) {
     if (isSmoothScrollSupported) {
       element.scrollIntoView({
-        behavior: 'smooth'
+        behavior: 'smooth',
+        block: 'start'
       });
     } else {
       element.scrollIntoView();
