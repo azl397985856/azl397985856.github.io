@@ -1,3 +1,5 @@
+@import 'breakpoints';
+
 nav {
   position: fixed;
   top: 0;
@@ -7,7 +9,7 @@ nav {
   align-items: center;
   justify-content: flex-end;
 
-  @media (max-width: 414px) {
+  @include breakpoint-small-down {
     height: 4rem;
   }
 

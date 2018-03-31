@@ -1,3 +1,5 @@
+@import 'breakpoints';
+
 .landing-page {
 	min-height: 100vh;
 	display: flex;
@@ -13,7 +15,7 @@
 		padding: 3.25rem 1.5rem 1rem;
 		text-align: center;
 
-		@media (max-width: 414px) {
+		@include breakpoint-small-down {
 		padding: 4.25rem 1.5rem 1rem;
 		}
 
@@ -31,7 +33,7 @@
 				line-height: 4rem;
 				padding-bottom: 1rem;
 				
-				@media (max-width: 414px) {
+				@include breakpoint-small-down {
 					font-size: 3rem;
 					line-height: 3.5rem;
 				}
@@ -42,7 +44,7 @@
 				margin: 1.5rem 0;
 				font-weight: 300;
 				
-				@media (max-width: 414px) {
+				@include breakpoint-small-down {
 					font-size: 1.25rem;
 				}
 			}

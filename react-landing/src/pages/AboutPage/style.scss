@@ -1,3 +1,5 @@
+@import 'breakpoints';
+
 .about-page {
   padding-top: 2rem;
   min-height: 100vh;
@@ -6,7 +8,7 @@
 	flex-direction: column;
   justify-content: center;
   
-  @media (max-width: 414px) {
+  @include breakpoint-small-down {
     padding-top: 3rem;
   }
 
@@ -25,6 +27,10 @@
       font-size: 0.875rem;
       line-height: 1.5rem;
       
+      @include breakpoint-small-down {
+        font-size: 1rem;
+      }
+
       p {
         font-weight: 300;
         padding: 0.5rem 0;
