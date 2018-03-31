@@ -24,7 +24,7 @@
   .portfolio-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 
     @include breakpoint-small-down {
       flex-direction: column;
