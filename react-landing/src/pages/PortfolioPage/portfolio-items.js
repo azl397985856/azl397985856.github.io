@@ -100,26 +100,6 @@ export default [{
     </div>
   )
 }, {
-  name: 'del-key',
-  render: (
-    <div className='portfolio-item'>
-      <div className='portfolio-item__title'>
-        Del Key
-      </div>
-      <div className='portfolio-item__desc'>
-        Delete keys from deeply nested objects in JavaScript
-      </div>
-      <div className='portfolio-item__icon'>
-        <i className="fab fa-react"></i>
-        <i className="fab fa-js"></i>
-      </div>
-      <div className='portfolio-item__links'>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.npmjs.com/package/del-key">NPM</a>
-        <a target="_blank" rel="noopener noreferrer" href="https://github.com/flexdinesh/del-key">More</a>
-      </div>
-    </div>
-  )
-}, {
   name: 'browser-or-node',
   render: (
     <div className='portfolio-item'>
