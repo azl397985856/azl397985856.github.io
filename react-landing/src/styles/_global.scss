@@ -1,24 +1,100 @@
-/* Typography */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import 'breakpoints';
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
-  line-height: 1.5rem;
-  
-  @include breakpoint-small-up {
+/* Typography */
+
+/* roboto - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+	src: local('Roboto Thin'), local('Roboto-Thin'),
+	url('../libs/fonts/roboto-100.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+	src: local('Roboto Light'), local('Roboto-Light'),
+	url('../libs/fonts/roboto-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+	src: local('Roboto'), local('Roboto-Regular'),
+	url('../libs/fonts/roboto-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+	src: local('Roboto Black'), local('Roboto-Black'),
+	url('../libs/fonts/roboto-900.woff2') format('woff2');
+}
+
+/* reem-kufi-regular - latin */
+@font-face {
+  font-family: 'Reem Kufi';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Reem Kufi Regular'), local('ReemKufi-Regular'),
+       url('../libs/fonts/reem-kufi-v4-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../libs/fonts/reem-kufi-v4-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+	font-size: 12px;
+
+	@include breakpoint-small-up {
     font-size: 14px;
   }
 
   @include breakpoint-medium-up {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   @include breakpoint-large-up {
-    font-size: 16px;
+    font-size: 18px;
+	}
+	
+	@include breakpoint-xxlarge-up {
+    font-size: 20px;
   }
 }
 
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+h1 {
+	font-weight: 900;
+}
+
+.content-grid {
+	margin: 0 auto;
+	width: calc(100% - 5rem); // mobile
+
+	@media (min-width: 415px) { // ipad
+		width: calc(100% - 5rem);
+	}
+
+	@media (min-width: 769px) { // ipad pro
+		width: calc(100% - 10rem);
+	}
+
+	@media (min-width: 1025px) { // desktop/laptop
+		width: calc(100% - 20rem);
+	}
+}
+
+::-webkit-scrollbar { 
+	display: none; 
+}
+
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
