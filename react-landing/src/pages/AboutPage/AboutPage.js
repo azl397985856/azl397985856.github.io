@@ -15,6 +15,9 @@ const AboutPage = (props, context) => {
           .highlight {
             background-color: ${colorHighlight};
           }
+          ::selection {
+            background-color: ${colorHighlight};
+          }
         `}
       </style>
       <div className="content-grid">
@@ -38,7 +41,7 @@ const AboutPage = (props, context) => {
               <span className="highlight">
                 without any UI library/framework
               </span>{' '}
-              (not counting react) and had so much fun along the way.
+              (not counting React) and had so much fun along the way.
             </p>
             <p>
               React-Redux, Node.js, Ruby on Rails, Java, Spring Boot, Docker and
