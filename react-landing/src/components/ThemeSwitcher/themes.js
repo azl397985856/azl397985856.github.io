@@ -51,6 +51,7 @@ const themes = [
   },
   {
     name: 'material-grey',
+    firstTime: true,
     colorPrimary: '#607D8B',
     colorAlternate: '#FFFFFF',
     colorHighlight: '#CFD8DC',
