@@ -15,6 +15,12 @@
 			margin-bottom: -0.25rem;
 			width: 2.70rem;
 			height: 2.70rem;
+
+			@include breakpoint-small-down {
+				margin-bottom: -0.225rem;
+				width: 2.25rem;
+				height: 2.25rem;
+			}
 		}
 	}
 }
