@@ -5,6 +5,7 @@ import PortfolioPage from '@pages/PortfolioPage';
 import ParallaxBackground from '@components/ParallaxBackground';
 import ScrollTop from '@components/ScrollTop';
 import ThemeSwitcher from '@components/ThemeSwitcher';
+import Browser from '@components/Browser';
 
 class App extends Component {
 
@@ -12,7 +13,9 @@ class App extends Component {
     return (
       <div className="dev-landing-page">
         <ThemeSwitcher>
-          <ParallaxBackground />
+          <Browser except firefox>
+            <ParallaxBackground />
+          </Browser>
           <LandingPage />
           <AboutPage />
           <PortfolioPage />

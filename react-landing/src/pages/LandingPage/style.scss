@@ -6,33 +6,59 @@
 	justify-content: center;
 	
 	main {
-		flex: auto;
 		display: flex;
+		flex: 1 0 auto;
 		flex-direction: column;
 		justify-content: center;
-		padding: 1rem 1.5rem;
+		padding: 3.25rem 1.5rem 1rem;
 		text-align: center;
-	
-		> .intro {
-			font-family: 'Reem Kufi', sans-serif;
-			font-size: 4rem;
-			font-weight: bold;
-			line-height: 4rem;
-			padding-bottom: 1rem;
+
+		@media (max-width: 414px) {
+		padding: 4.25rem 1.5rem 1rem;
+		}
+
+		.intro-wrapper {
+			flex: auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding: 3.25rem 1.5rem 1rem;
+			text-align: center;
 			
-			@media (max-width: 414px) {
-				font-size: 3rem;
-				line-height: 3.5rem;
+			> .intro-name {
+				font-family: 'Reem Kufi', sans-serif;
+				font-size: 4rem;
+				font-weight: bold;
+				line-height: 4rem;
+				padding-bottom: 1rem;
+				
+				@media (max-width: 414px) {
+					font-size: 3rem;
+					line-height: 3.5rem;
+				}
+			}
+		
+			> .tagline {
+				font-size: 1.375rem;
+				margin: 1.5rem 0;
+				font-weight: 300;
+				
+				@media (max-width: 414px) {
+					font-size: 1.25rem;
+				}
 			}
 		}
 	
-		> .tagline {
-			font-size: 1.375rem;
-			margin: 1.5rem 0;
-			font-weight: 300;
-			
-			@media (max-width: 414px) {
-				font-size: 1.25rem;
+		
+
+		.browser-notes {
+			flex: 1 0 auto;
+			font-size: 0.625rem;
+
+			span {
+				border-width: 1px;
+				border-style: solid;
+				padding: 0.125rem 0.5rem;
 			}
 		}
 	}
