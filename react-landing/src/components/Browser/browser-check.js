@@ -1,3 +1,12 @@
+// Mobile Browsers
+export const isMobile = () => {
+  const ua = (navigator || {}).userAgent;
+  if (ua) {
+    return (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(ua))
+  }
+  return false;
+}
+
 // Opera 8.0+
 export const isOpera = () => {
   let opr = window.opr || {};
@@ -25,7 +34,7 @@ export const isChrome = () => !!window.chrome && !!window.chrome.webstore;
 // Blink engine detection
 export const isBlink = () => (isChrome || isOpera) && !!window.CSS;
 
-export const allBrowsers = ['chrome', 'firefox', 'safari', 'opera', 'ie', 'edge', 'blink'];
+export const allBrowsers = ['chrome', 'firefox', 'safari', 'opera', 'ie', 'edge', 'blink', 'mobile'];
 
 export default {
   isOpera,
@@ -35,5 +44,6 @@ export default {
   isEdge,
   isChrome,
   isBlink,
+  isMobile,
   allBrowsers
 }

@@ -4,6 +4,7 @@ import browserCheck from './browser-check';
 
 const getBrowsersArr = () => {
   const browsers = [
+    { name: 'mobile', isCurrentBrowser: browserCheck.isMobile() },
     { name: 'chrome', isCurrentBrowser: browserCheck.isChrome() },
     { name: 'firefox', isCurrentBrowser: browserCheck.isFirefox() },
     { name: 'safari', isCurrentBrowser: browserCheck.isSafari() },
@@ -69,6 +70,7 @@ Browser.propTypes = {
   ie: PropTypes.bool,
   edge: PropTypes.bool,
   blink: PropTypes.bool,
+  mobile: PropTypes.bool,
   except: PropTypes.bool,
   only: PropTypes.bool,
   children: PropTypes.node
@@ -81,6 +83,7 @@ Browser.defaultProps = {
   opera: false,
   ie: false,
   edge: false,
+  mobile: false,
   blink: false
 };
 
