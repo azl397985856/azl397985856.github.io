@@ -41,11 +41,11 @@ const AboutPage = (props, context) => {
               <span className="highlight">
                 without any UI library/framework
               </span>{' '}
-              (not counting React) and had so much fun along the way.
+              (except React though) and had so much fun along the way.
             </p>
             <p>
               React-Redux, Node.js, Ruby on Rails, Java, Spring Boot, Docker and
-              AWS are the main tricks up my sleeve.
+              AWS are the main tricks up my sleeve. I am also obsessed with making the web look pretty with SASS/CSS.
             </p>
             <p className="text-emoji" style={{ color: colorPrimary }}>
               \ (•◡•) /
