@@ -71,8 +71,8 @@ export default [{
          Boilerplate plate code to create and publish an NPM package
       </div>
       <div className='portfolio-item__icon'>
-        <i className="fab fa-react"></i>
         <i className="fab fa-js"></i>
+        <i className="fab fa-npm"></i>
       </div>
       <div className='portfolio-item__links'>
         <a target="_blank" rel="noopener noreferrer" href="https://dev.to/flexdinesh/publish-your-own-npm-package---5b71">Blog</a>
@@ -91,7 +91,6 @@ export default [{
         Configurable Axios Interceptor to retry failed http calls.
       </div>
       <div className='portfolio-item__icon'>
-        <i className="fab fa-react"></i>
         <i className="fab fa-js"></i>
       </div>
       <div className='portfolio-item__links'>
@@ -110,8 +109,8 @@ export default [{
         Javascript library to check the runtime JS env
       </div>
       <div className='portfolio-item__icon'>
-        <i className="fab fa-react"></i>
         <i className="fab fa-js"></i>
+        <i className="fab fa-npm"></i>
       </div>
       <div className='portfolio-item__links'>
         <a target="_blank" rel="noopener noreferrer" href="https://www.npmjs.com/package/browser-or-node">NPM</a>
