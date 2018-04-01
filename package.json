@@ -8,6 +8,7 @@
     "start:prod": "ENV=prod node scripts/start.js",
     "prebuild": "npm run clean",
     "build": "node scripts/build.js",
+    "postbuild": "cp Readme.md build/Readme.md",
     "test": "node scripts/test.js --env=jsdom",
     "clean": "rm -rf build",
     "predeploy": "npm run build",
