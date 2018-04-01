@@ -2,6 +2,7 @@
   "name": "react-landing",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "http://flexdinesh.github.io/",
   "scripts": {
     "start": "node scripts/start.js",
     "start:prod": "ENV=prod node scripts/start.js",
@@ -10,7 +11,7 @@
     "test": "node scripts/test.js --env=jsdom",
     "clean": "rm -rf build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build -b master"
   },
   "devDependencies": {
     "react": "^16.2.0",
