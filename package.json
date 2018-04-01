@@ -2,21 +2,19 @@
   "name": "react-landing",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://flexdinesh.github.io/react-landing/dist/",
   "scripts": {
     "start": "node scripts/start.js",
     "start:prod": "ENV=prod node scripts/start.js",
     "prebuild": "npm run clean",
     "build": "node scripts/build.js",
-    "postbuild": "cp dist/index.html ./index.html",
     "test": "node scripts/test.js --env=jsdom",
-    "clean": "rm -rf dist index.html"
-  },
-  "dependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "clean": "rm -rf build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
     "babel-eslint": "7.2.3",
@@ -39,6 +37,7 @@
     "extract-text-webpack-plugin": "3.0.2",
     "file-loader": "1.1.5",
     "fs-extra": "3.0.1",
+    "gh-pages": "^1.1.0",
     "html-webpack-plugin": "2.29.0",
     "jest": "20.0.4",
     "node-sass": "^4.7.2",
