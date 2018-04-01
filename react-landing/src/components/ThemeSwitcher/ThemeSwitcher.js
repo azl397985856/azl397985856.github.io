@@ -27,8 +27,12 @@ class ThemeSwitcher extends Component {
   getRandomTheme = () => {
     const currentTheme = this.state.theme;
     const allThemes = getThemes();
-    const themesWithoutCurrentTheme = allThemes.filter(theme => theme.name !== currentTheme.name);
-    const randomThemeIndex = Math.floor((Math.random() * (themesWithoutCurrentTheme.length)));
+    const themesWithoutCurrentTheme = allThemes.filter(
+      theme => theme.name !== currentTheme.name
+    );
+    const randomThemeIndex = Math.floor(
+      (Math.random() * (themesWithoutCurrentTheme.length))
+    );
     return themesWithoutCurrentTheme[randomThemeIndex];
   }
 
