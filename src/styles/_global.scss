@@ -78,15 +78,15 @@ h1 {
 	margin: 0 auto;
 	width: calc(100% - 5rem); // mobile
 
-	@media (min-width: 415px) { // ipad
+	@include breakpoint-medium-up {
 		width: calc(100% - 5rem);
 	}
 
-	@media (min-width: 769px) { // ipad pro
+	@include breakpoint-large-up {
 		width: calc(100% - 10rem);
 	}
 
-	@media (min-width: 1025px) { // desktop/laptop
+	@include breakpoint-xlarge-up {
 		width: calc(100% - 20rem);
 	}
 }
