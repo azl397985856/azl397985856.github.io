@@ -2,7 +2,7 @@ import React from "react";
 
 export default [
   {
-    name: "typy",
+    name: "automate-everything",
     render: (
       <div className="portfolio-item">
         <div className="portfolio-item__title">我的第一本书</div>
@@ -26,7 +26,7 @@ export default [
     )
   },
   {
-    name: "dev-landing-page",
+    name: "zhuque",
     render: (
       <div className="portfolio-item">
         <div className="portfolio-item__title">朱雀</div>
@@ -48,7 +48,7 @@ export default [
     )
   },
   {
-    name: "react-redux-boilerplate",
+    name: "qy",
     render: (
       <div className="portfolio-item">
         <div className="portfolio-item__title">小门神</div>
@@ -62,6 +62,28 @@ export default [
             target="_blank"
             rel="noopener noreferrer"
             href="https://github.com/azl397985856/qy"
+          >
+            地址
+          </a>
+        </div>
+      </div>
+    )
+  },
+  {
+    name: "duiba-siri",
+    render: (
+      <div className="portfolio-item">
+        <div className="portfolio-item__title">siri</div>
+        <div className="portfolio-item__desc">兑吧小助手，让你专注做需求。</div>
+        <div className="portfolio-item__icon">
+          <i className="fab fa-terminal" />
+          <i className="fab fa-js" />
+        </div>
+        <div className="portfolio-item__links">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/renliwo/siri"
           >
             地址
           </a>
