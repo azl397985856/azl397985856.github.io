@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { toElement as scrollToElement } from '@utils/scroll';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import { toElement as scrollToElement } from "@utils/scroll";
 
-import './style.scss';
+import "./style.scss";
 
 class ScrollToPrevious extends Component {
   scrollToPrevious() {
@@ -17,11 +17,11 @@ class ScrollToPrevious extends Component {
     return (
       <div
         className="scroll-to-previous"
-        onClick={(e) => this.scrollToPrevious()}
+        onClick={e => this.scrollToPrevious()}
       >
         <div className="arrow bounce" style={{ color: colorPrimary }}>
           <button className="fas fa-chevron-up fa-2x" href="#" />
-          <div className="scroll-text">Click Me</div>
+          <div className="scroll-text">点击</div>
         </div>
       </div>
     );

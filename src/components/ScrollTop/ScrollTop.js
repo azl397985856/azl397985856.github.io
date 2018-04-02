@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { toTop as scrollToPageTop } from '@utils/scroll';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import { toTop as scrollToPageTop } from "@utils/scroll";
 
-import './style.scss';
+import "./style.scss";
 
 class ScrollTop extends Component {
   constructor(props) {
@@ -24,24 +24,24 @@ class ScrollTop extends Component {
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener("scroll", this.handleScroll);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener("scroll", this.handleScroll);
   }
 
   render() {
     const { theme: { colorPrimary } } = this.context;
-    const hideArrowClass = this.state.shouldShowScrollTopArrow ? '' : 'hide';
+    const hideArrowClass = this.state.shouldShowScrollTopArrow ? "" : "hide";
     return (
-      <div className="scroll-top" onClick={(e) => scrollToPageTop()}>
+      <div className="scroll-top" onClick={e => scrollToPageTop()}>
         <div
           className={`arrow ${hideArrowClass}`}
           style={{ color: colorPrimary }}
         >
           <button className="fas fa-angle-double-up fa-2x" href="#" />
-          <div className="to-top">To Top</div>
+          <div className="to-top">回到顶部</div>
         </div>
       </div>
     );

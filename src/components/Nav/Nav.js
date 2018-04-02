@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { toElement as scrollToElement } from '@utils/scroll';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import { toElement as scrollToElement } from "@utils/scroll";
 
-import './style.scss';
+import "./style.scss";
 
 class Nav extends Component {
   constructor(props) {
@@ -14,11 +14,11 @@ class Nav extends Component {
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener("scroll", this.handleScroll);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener("scroll", this.handleScroll);
   }
 
   handleScroll() {
@@ -44,21 +44,21 @@ class Nav extends Component {
       switchTheme
     } = this.context;
 
-    const stickyClass = this.state.isSticky ? 'sticky' : '';
+    const stickyClass = this.state.isSticky ? "sticky" : "";
     const stickyStyles = this.state.isSticky
       ? { backgroundColor: navAlpha, color: colorPrimary }
       : { backgroundColor: bgPrimary, color: colorPrimary };
     return (
       <nav
         className={stickyClass}
-        ref={(elem) => {
+        ref={elem => {
           this.nav = elem;
         }}
         style={stickyStyles}
       >
-        <div className="magic-wand bounce-xy" onClick={(e) => switchTheme()}>
+        <div className="magic-wand bounce-xy" onClick={e => switchTheme()}>
           <button className="fas fa-magic fa-lg" href="#" />
-          <div className="magic-text">Color Me</div>
+          <div className="magic-text">改变主题</div>
         </div>
         <style jsx="true">
           {`
@@ -70,15 +70,15 @@ class Nav extends Component {
         <div className="menu">
           <div
             className="menu__item active"
-            onClick={(e) => this.scrollToPage('.about-page')}
+            onClick={e => this.scrollToPage(".about-page")}
           >
-            About
+            关于我
           </div>
           <div
             className="menu__item"
-            onClick={(e) => this.scrollToPage('.portfolio-page')}
+            onClick={e => this.scrollToPage(".portfolio-page")}
           >
-            Portfolio
+            作品展示
           </div>
         </div>
       </nav>

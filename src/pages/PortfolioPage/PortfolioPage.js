@@ -1,10 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import PortfolioItem from '@components/PortfolioItem';
-import ScrollToPrevious from '@components/ScrollToPrevious';
-import portfolioItems from './portfolio-items';
+import React from "react";
+import PropTypes from "prop-types";
+import PortfolioItem from "@components/PortfolioItem";
+import ScrollToPrevious from "@components/ScrollToPrevious";
+import portfolioItems from "./portfolio-items";
 
-import './style.scss';
+import "./style.scss";
 
 const PortfolioPage = (props, context) => {
   const {
@@ -14,7 +14,7 @@ const PortfolioPage = (props, context) => {
   return (
     <div className="portfolio-page" style={{ backgroundColor: bgPrimary }}>
       <div className="content-grid">
-        <h1 style={{ color: colorPrimary }}>Portfolio</h1>
+        <h1 style={{ color: colorPrimary }}>作品展示</h1>
         <div className="portfolio-wrapper">
           <style jsx="true">
             {`

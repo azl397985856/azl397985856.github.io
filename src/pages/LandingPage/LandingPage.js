@@ -1,11 +1,11 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import SocialIcons from '@components/SocialIcons';
-import Nav from '@components/Nav';
-import ScrollToNext from '@components/ScrollToNext';
-import BrowserNotes from '@components/BrowserNotes';
+import React from "react";
+import PropTypes from "prop-types";
+import SocialIcons from "@components/SocialIcons";
+import Nav from "@components/Nav";
+import ScrollToNext from "@components/ScrollToNext";
+import BrowserNotes from "@components/BrowserNotes";
 
-import './style.scss';
+import "./style.scss";
 
 const LandingPage = (props, context) => {
   const { theme: { bgPrimary, colorPrimary } } = context;
@@ -16,9 +16,9 @@ const LandingPage = (props, context) => {
       <main style={{ color: colorPrimary }}>
         <BrowserNotes />
         <div className="intro-wrapper">
-          <div className="intro-name">Hello, I'm Dinesh!</div>
-          <div className="tagline">
-            Full Stack Dev | Open-Source Enthusiast | Blogger | Ninja
+          <div className="intro-name">Hello, I'm lucifer!</div>
+          <div class="tagline">
+            前端工程师 | node工程师 | Linux爱好者 | github爱好者
           </div>
           <SocialIcons />
         </div>
