@@ -1,0 +1,31 @@
+.tool-page {
+  margin: 80px auto;
+  width: 1000px;
+}
+
+.tool-page-item {
+  color: rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  text-align: center;
+  width: 300px;
+  min-height: 300px;
+  box-shadow: 0 0 9px #666;
+  &:hover {
+    box-shadow: -8px 5px 9px #666;
+  }
+
+  margin-left: 20px;
+}
+
+.tool-page-item-title {
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.tool-page-item-list {
+  margin-top: 20px;
+  a {
+    text-decoration: underline;
+    color: #999;
+  }
+}
