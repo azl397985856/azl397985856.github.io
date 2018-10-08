@@ -90,5 +90,26 @@ export default [
         </div>
       </div>
     )
+  },
+  {
+    name: "mono-series",
+    render: (
+      <div className="portfolio-item">
+        <div className="portfolio-item__title">mono-series</div>
+        <div className="portfolio-item__desc">造轮子系列</div>
+        <div className="portfolio-item__icon">
+          <i className="fab fa-js" />
+        </div>
+        <div className="portfolio-item__links">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/azl397985856/mono-series/tree/master"
+          >
+            地址
+          </a>
+        </div>
+      </div>
+    )
   }
 ];
