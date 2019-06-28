@@ -44,6 +44,12 @@ const AboutPage = (props, context) => {
             <p>
               目前就职于<span className="highlight">兑吧科技网络有限公司</span>
             </p>
+            <p>
+              如果你是老板，并且对我比较感兴趣，想带我走，这里有我的
+              <a className="highlight" href="https://github.com/azl397985856/resume/blob/master/resume.pdf" target="_blank">
+              简历
+              </a>。
+            </p>
             <p className="text-emoji" style={{ color: colorPrimary }}>
               \ (•◡•) /
             </p>

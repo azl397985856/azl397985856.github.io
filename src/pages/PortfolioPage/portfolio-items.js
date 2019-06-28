@@ -2,6 +2,29 @@ import React from "react";
 
 export default [
   {
+    name: "leetcode",
+    render: (
+      <div className="portfolio-item">
+        <div className="portfolio-item__title">leetcode题解</div>
+        <div className="portfolio-item__desc">
+          我的leetcode题解之路
+        </div>
+        <div className="portfolio-item__icon">
+          <i className="fab fa-js" />
+        </div>
+        <div className="portfolio-item__links">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/azl397985856/leetcode"
+          >
+            地址
+          </a>
+        </div>
+      </div>
+    )
+  },
+  {
     name: "automate-everything",
     render: (
       <div className="portfolio-item">
