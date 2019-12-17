@@ -2,21 +2,49 @@ import React from "react";
 
 export default [
   {
-    name: "leetcode",
+    name: "blog",
     render: (
       <div className="portfolio-item">
-        <div className="portfolio-item__title">leetcode题解</div>
+        <div className="portfolio-item__title">个人博客</div>
         <div className="portfolio-item__desc">
-          我的leetcode题解之路
+          不定时分享前端，算法，效率技巧，成长心得等
         </div>
         <div className="portfolio-item__icon">
           <i className="fab fa-js" />
+          <i className="fab fa-terminal" />
+          <i className="fab fa-blogger"></i>
         </div>
         <div className="portfolio-item__links">
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/azl397985856/leetcode"
+            href="https://lucifer.ren/blog/"
+          >
+            地址
+          </a>
+        </div>
+      </div>
+    )
+  },
+
+  {
+    name: "daily-featured",
+    render: (
+      <div className="portfolio-item">
+        <div className="portfolio-item__title">每日一荐</div>
+        <div className="portfolio-item__desc">
+          每天给你推荐一个新奇，好玩，高品质的开源库，好文，观点或言论等。
+        </div>
+        <div className="portfolio-item__icon">
+          <i className="fab fa-js" />
+          <i className="fab fa-terminal" />
+          <i className="fas fa-book-reader"></i>
+        </div>
+        <div className="portfolio-item__links">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/azl397985856/daily-featured"
           >
             地址
           </a>
@@ -48,6 +76,50 @@ export default [
       </div>
     )
   },
+  {
+    name: "fe-interview",
+    render: (
+      <div className="portfolio-item">
+        <div className="portfolio-item__title">fe-interview</div>
+        <div className="portfolio-item__desc">宇宙最强的前端面试指南</div>
+        <div className="portfolio-item__icon">
+          <i className="fab fa-js" />
+        </div>
+        <div className="portfolio-item__links">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/azl397985856/fe-interview"
+          >
+            地址
+          </a>
+        </div>
+      </div>
+    )
+  },
+  {
+    name: "leetcode",
+    render: (
+      <div className="portfolio-item">
+        <div className="portfolio-item__title">leetcode题解</div>
+        <div className="portfolio-item__desc">我的leetcode题解之路</div>
+        <div className="portfolio-item__icon">
+          <i className="fab fa-js" />
+          <i className="fab fa-python"></i>
+        </div>
+        <div className="portfolio-item__links">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/azl397985856/leetcode"
+          >
+            地址
+          </a>
+        </div>
+      </div>
+    )
+  },
+
   {
     name: "zhuque",
     render: (
