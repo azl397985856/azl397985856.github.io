@@ -5,7 +5,7 @@ import "./style.scss";
 
 const AboutPage = (props, context) => {
   const {
-    theme: { colorPrimary, colorHighlight, bgPrimary, textPrimary }
+    theme: { colorPrimary, colorHighlight, bgPrimary, textPrimary },
   } = context;
 
   return (
@@ -25,10 +25,9 @@ const AboutPage = (props, context) => {
         <div className="about-wrapper">
           <div className="about-content" style={{ color: textPrimary }}>
             <p>
-              我是一个对技术充满兴趣的小程序员。擅长<span className="highlight">
-                JavaScript
-              </span>
-              和 <span className="highlight">nodejs.</span>
+              我是一个对技术充满兴趣的小程序员。擅长
+              <span className="highlight">JavaScript</span>和{" "}
+              <span className="highlight">nodejs.</span>
             </p>
 
             <p>除了我的本职工作外</p>
@@ -42,13 +41,18 @@ const AboutPage = (props, context) => {
             </p>
 
             <p>
-              目前就职于<span className="highlight">兑吧科技网络有限公司</span>
+              目前就职于<span className="highlight">e签宝</span>
             </p>
             <p>
               如果你是老板，并且对我比较感兴趣，想带我走，这里有我的
-              <a className="highlight" href="https://github.com/azl397985856/resume/blob/master/resume.pdf" target="_blank">
-              简历
-              </a>。
+              <a
+                className="highlight"
+                href="https://github.com/azl397985856/resume/blob/master/resume.pdf"
+                target="_blank"
+              >
+                简历
+              </a>
+              。
             </p>
             <p className="text-emoji" style={{ color: colorPrimary }}>
               \ (•◡•) /
@@ -62,7 +66,7 @@ const AboutPage = (props, context) => {
 };
 
 AboutPage.contextTypes = {
-  theme: PropTypes.any
+  theme: PropTypes.any,
 };
 
 export default AboutPage;
